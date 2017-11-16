@@ -60,21 +60,6 @@ Performance is nearly identical to the closed source paid miners. Here are some 
 * **Dual X5650** - 466 H/s (depends on NUMA)
 * **Dual E5640** - 365 H/s (same as above)
 
-## Default dev donation
-By default the miner will donate 2% of the hashpower (2 minute in 100 minutes) to my pool. If you want to change that, edit **donate-level.h** before you build the binaries.
-
-If you want to donate directly to support further development, here is my wallet
-
-fireice-uk:
-```
-4581HhZkQHgZrZjKeCfCJxZff9E3xCgHGF25zABZz7oR71TnbbgiS7sK9jveE6Dx6uMs2LwszDuvQJgRZQotdpHt1fTdDhk
-```
-
-psychocrypt:
-```
-43NoJVEXo21hGZ6tDG6Z3g4qimiGdJPE6GRxAmiWwm26gwr62Lqo7zRiCJFSBmbkwTGNuuES9ES5TgaVHceuYc4Y75txCTU
-```
-
 ## Common Issues
 
 **SeLockMemoryPrivilege failed**
@@ -99,7 +84,7 @@ Reference: http://rybkaforum.net/cgi-bin/rybkaforum/topic_show.pl?pid=259791#pid
 
 If you set up the user rights properly (see above), and your system has 4-8GB of RAM (50%+ use), there is a significant chance that there simply won't be a large enough chunk of contiguous memory because Windows is fairly bad at mitigating memory fragmentation.
 
-If that happens, disable all auto-staring applications and run the miner after a reboot.
+If that happens, disable all auto-starting applications and run the miner after a reboot.
 
 **msvcp140.dll and vcruntime140.dll not available errors**
 
@@ -111,7 +96,7 @@ Download and install this [runtime package](https://go.microsoft.com/fwlink/?Lin
 From [config.txt](config.txt):
 
 On Linux you will need to configure large page support `sudo sysctl -w vm.nr_hugepages=128` and increase your
-ulimit -l. To do this you need to add following lines to /etc/security/limits.conf:
+ulimit -l. To do do this you need to add following lines to /etc/security/limits.conf:
 
     * soft memlock 262144
     * hard memlock 262144
