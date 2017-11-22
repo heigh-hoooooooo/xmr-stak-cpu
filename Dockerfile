@@ -18,7 +18,7 @@ COPY . .
 
 RUN mkdir build \
     && cd build \
-    && cmake .. \
+    && cmake -DHWLOC_ENABLE=OFF .. \
     && make -j$(nproc) \
     && cd ..
 
@@ -38,7 +38,7 @@ RUN apk add --update --repository http://dl-3.alpinelinux.org/alpine/edge/testin
 
 ENV CONFIG /app/config.txt
 
-ENV USE_SLOW_MEMORY false
+ENV USE_SLOW_MEMORY always
 ENV NICEHASH_NONCE false
 ENV AES_OVERRIDE null
 
@@ -67,9 +67,9 @@ ENV EMAIL "heighhoooooooo@heighhoooooooo.fr"
 COPY --from=builder /app/build/bin/xmr-stak-cpu /app/xmr-stak-cpu
 RUN chmod +x /app/xmr-stak-cpu
 
-COPY config.template /app/
+COPY docker/config.template /app/
 
-COPY docker-entrypoint.sh /
+COPY docker/docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
