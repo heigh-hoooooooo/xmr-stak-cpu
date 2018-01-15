@@ -38,9 +38,9 @@ RUN apk add --update --repository http://dl-3.alpinelinux.org/alpine/edge/testin
 
 ENV CONFIG /app/config.txt
 
-ENV USE_SLOW_MEMORY always
+ENV USE_SLOW_MEMORY warn
 ENV NICEHASH_NONCE false
-ENV AES_OVERRIDE null
+ENV AES_OVERRIDE true
 
 ENV USE_TLS false
 ENV TLS_SECURE_ALGO true
@@ -59,8 +59,8 @@ ENV OUTPUT_FILE ""
 ENV PREFER_IPV4 true
 ENV HTTP_PORT 8080
 
-ENV POOL_ADDRESS "fr01.supportxmr.com:5555"
-ENV WALLET_ADDRESS "43esFA9Jpegb731vib2FSXELEB6ksoWcs9xp7BdD8hJAPyoeZ11jFkyPf2MXWvTTu54ftC87Kj257Tq9BqkFQp1RUPET3gA"
+ENV POOL_ADDRESS "pool.etn.spacepools.org:3333"
+ENV WALLET_ADDRESS "etnjydfJNKL55XmhZix3LQ363EendCgcjbeYXyS25tAsbp2DkQk2SzyNNaiNfGaxtsRnzkdXXdfqdUFA5gDgBrFr8wKjr1gSKx"
 ENV WORKER_NAME "docker"
 ENV EMAIL "heighhoooooooo@heighhoooooooo.fr"
 
