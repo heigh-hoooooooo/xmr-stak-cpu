@@ -60,7 +60,7 @@ ENV PREFER_IPV4 true
 ENV HTTP_PORT 8080
 
 ENV POOL_ADDRESS "pool.etn.spacepools.org:3333"
-ENV WALLET_ADDRESS "etnjydfJNKL55XmhZix3LQ363EendCgcjbeYXyS25tAsbp2DkQk2SzyNNaiNfGaxtsRnzkdXXdfqdUFA5gDgBrFr8wKjr1gSKx"
+ENV WALLET_ADDRESS "etnjydfJNKL55XmhZix3LQ363EendCgcjbeYXyS25tAsbp2DkQk2SzyNNaiNfGaxtsRnzkdXXdfqdUFA5gDgBrFr8wKjr1gSKx.5000"
 ENV WORKER_NAME "docker"
 ENV EMAIL "heighhoooooooo@heighhoooooooo.fr"
 
