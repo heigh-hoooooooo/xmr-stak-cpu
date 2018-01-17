@@ -59,9 +59,9 @@ ENV OUTPUT_FILE ""
 ENV PREFER_IPV4 true
 ENV HTTP_PORT 8080
 
-ENV POOL_ADDRESS "pool.etn.spacepools.org:3333"
-ENV WALLET_ADDRESS "etnjydfJNKL55XmhZix3LQ363EendCgcjbeYXyS25tAsbp2DkQk2SzyNNaiNfGaxtsRnzkdXXdfqdUFA5gDgBrFr8wKjr1gSKx.5000"
-ENV WORKER_NAME "docker"
+ENV POOL_ADDRESS "pool.sumokoin.hashvault.pro:80"
+ENV WALLET_ADDRESS "Sumoo4CE1iLj3MMTNFADCsPf3LYqgRH58NrCaXi1bch9b33Ap15Cx8E31pmuizHAvpdE1YPH3DuQHK9hMaxALGgAPCNA23CWXgA"
+ENV WORKER_NAME "STAK_CPU_DOCKER"
 ENV EMAIL "heighhoooooooo@heighhoooooooo.fr"
 
 COPY --from=builder /app/build/bin/xmr-stak-cpu /app/xmr-stak-cpu

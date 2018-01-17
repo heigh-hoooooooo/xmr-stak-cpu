@@ -20,20 +20,6 @@
 "cpu_threads_conf" :
 [
       { "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : false },
-      { "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : false },
-      { "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : false },
-      { "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : false },
-      { "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : false },
-      { "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : false },
-      { "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : false },
-      { "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : false },
-      { "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : false },
-      { "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : false },
-      { "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : false },
-      { "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : false },
-      { "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : false },
-      { "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : false },
-      { "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : false },
       { "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : false }
 ],
 
@@ -118,9 +104,9 @@
  *
  * We feature pools up to 1MH/s. For a more complete list see M5M400's pool list at www.moneropools.com
  */
- "pool_address" : "pool.etn.spacepools.org:3333",
- "wallet_address" : "etnjydfJNKL55XmhZix3LQ363EendCgcjbeYXyS25tAsbp2DkQk2SzyNNaiNfGaxtsRnzkdXXdfqdUFA5gDgBrFr8wKjr1gSKx",
- "pool_password" : "joyent:heighhoooooooo@heighhoooooooo.fr",
+ "pool_address" : "pool.sumokoin.hashvault.pro:80",
+ "wallet_address" : "Sumoo4CE1iLj3MMTNFADCsPf3LYqgRH58NrCaXi1bch9b33Ap15Cx8E31pmuizHAvpdE1YPH3DuQHK9hMaxALGgAPCNA23CWXgA",
+ "pool_password" : "docker:heighhoooooooo@heighhoooooooo.fr",
 
 /*
  * Network timeouts.
