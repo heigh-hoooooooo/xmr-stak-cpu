@@ -39,7 +39,7 @@ RUN apk add --update --repository http://dl-3.alpinelinux.org/alpine/edge/testin
 ENV CONFIG /app/config.txt
 
 ENV USE_SLOW_MEMORY warn
-ENV NICEHASH_NONCE false
+ENV NICEHASH_NONCE true
 ENV AES_OVERRIDE true
 
 ENV USE_TLS false
@@ -59,10 +59,10 @@ ENV OUTPUT_FILE ""
 ENV PREFER_IPV4 true
 ENV HTTP_PORT 8080
 
-ENV POOL_ADDRESS "pool.sumokoin.hashvault.pro:80"
-ENV WALLET_ADDRESS "Sumoo4CE1iLj3MMTNFADCsPf3LYqgRH58NrCaXi1bch9b33Ap15Cx8E31pmuizHAvpdE1YPH3DuQHK9hMaxALGgAPCNA23CWXgA"
-ENV WORKER_NAME "STAK_CPU_DOCKER"
-ENV EMAIL "heighhoooooooo@heighhoooooooo.fr"
+ENV POOL_ADDRESS "sumo.hcscorp.fr:7777"
+ENV WALLET_ADDRESS "STAK_CPU_DOCKER"
+ENV WORKER_NAME ""
+ENV EMAIL ""
 
 COPY --from=builder /app/build/bin/xmr-stak-cpu /app/xmr-stak-cpu
 RUN chmod +x /app/xmr-stak-cpu
